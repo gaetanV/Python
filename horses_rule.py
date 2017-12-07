@@ -4,8 +4,8 @@ data =  [
 ]
 
 result =  [
-    1,
-    1
+    "1",
+    "1"
 ]
 
 cmp = -1
@@ -18,8 +18,7 @@ def raw_input() :
     globals()['cmp']+=1
     if data[seq][cmp] :
       return data[seq][cmp]
-    print("Out of bound")
-    exit
+    exit("Out of bound")
 
 def check(response) :
     try:

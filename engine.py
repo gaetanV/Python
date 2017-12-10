@@ -12,7 +12,7 @@ def raw_input() :
     try:
        return data[pointer]
     except IndexError:
-       exit(1)
+       exit(0)
 
 def open(path,mode) :
      exit(3)

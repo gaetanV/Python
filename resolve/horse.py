@@ -4,7 +4,7 @@ import math
 inf = 10000000
 n = int(raw_input())
 
-power = [];
+power = []
 
 for i in xrange(n):
     pi = int(raw_input())

@@ -84,4 +84,4 @@ def check(Response,Mask) :
  
 
 
-runShell()
+runInject()

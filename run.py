@@ -2,8 +2,10 @@ import subprocess
 import os
 import json
 
-NAME = "resolve/down.py"
-INPUT = "db/down.json"
+LANG = "c"
+NAME = "resolve/horse.exe"
+
+INPUT = "db/horse.json"
 USER = "GIT"
 
 F1 = open(INPUT, "r")
@@ -12,9 +14,13 @@ F1.close()
 
 def runShell():
     for i in range(len(data["input"])):
-       
+        if LANG == 'py':
+            CMD = "py " + NAME
+        else:
+            CMD = NAME
+            
         sp = subprocess.Popen(
-            "py " + NAME,            
+            CMD,            
             stdin = subprocess.PIPE, 
             stdout = subprocess.PIPE,
         )
@@ -84,4 +90,4 @@ def check(Response,Mask) :
  
 
 
-runInject()
+runShell()
